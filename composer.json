@@ -1,0 +1,20 @@
+{
+    "require": {
+        "oomphinc/composer-installers-extender": "^1.1",
+        "bower-asset/bootstrap": "^3.3",
+        "npm-asset/jquery": "^2.2",
+        "npm-asset/vue2-dropzone": "^3.5"
+    },
+    "extra": {
+        "installer-types": ["bower-asset", "npm-asset"],
+        "installer-paths": {
+            "www/assets/{$name}/": ["type:bower-asset", "type:npm-asset"]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}
